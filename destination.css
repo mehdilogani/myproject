@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap');
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  
+}
+a{
+  text-decoration: 0;
+}
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9px;
+
+
+}
+::-webkit-scrollbar{
+  width: 8px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #ccc;
+
+}
+body{
+  background-color: #29d9d5
+}
+section{
+  margin-top: 50px;
+}
+header{
+  background-color: #222;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 5%;
+
+}
+header  .logo a{
+  font-size: 25px;
+  color:  #29d9d5;
+  text-decoration: 0;
+}
+header  .logo a span{
+  color: #fff;
+
+}
+.menu{
+  display: flex;
+  align-items: center;
+
+}
+.menu li{
+  margin: 0 15px;
+  list-style-type: none;
+}
+.menu li a{
+  color: #fff;
+  font-size: 14px;
+}
+.btn-reservation{
+  color: #29d9d5;
+  font-size: 14px;
+  border: 2px solid #29d9d5;
+  padding: 5px 20px;
+  transition: 0.5s;
+  font-weight: bolder;
+}
+.btn-reservation:hover{
+    background-color: #29d9d5;
+    color: #fff;
+    font-weight: bold;
+
+}
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #1abc9c;
+    text-align: center;
+    
+  }
+  
+  .month ul {
+    margin: 0;
+    padding: 50px;
+  }
+  
+  .month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  .month .prev {
+    float: left;
+    padding-top: 250px;
+  }
+  
+  .month .next {
+    float: right;
+    padding-top: 150px;
+  }
+  
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+  }
+  
+  .weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+  }
+  
+  .days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+  }
+  
+  .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+  }
+  
+  .days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 300px;
+    margin: 25px;
+    background-color: #fff;
+  }
+  
+  .card:hover {
+    box-shadow: 0 16px 16px 0 rgba(0,0,0,0.5);
+  }
+  
+  .container {
+    padding: 2px 16px;
+    background-color: #fff;
+  }
+  .card_in_on_line{
+    display: flex;
+  }
+  .in_center{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    align-items: center;
+  }
+  .displayNone{
+    display: none;
+  }
+  .formTravel{
+   display: flex;
+   justify-content: center;
+    margin-top:150px
+  }
+  .insideFormTravel{
+    width: 600px;
+  }
+  .formInput{
+    width: 100%;
+  }
+  .formBox{
+    margin: 20px 0px;
+  }

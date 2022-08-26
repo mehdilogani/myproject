@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>destination</title>
+  <link rel="stylesheet" href="destination.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><span>Logani</span>travel</a>
+    </div>
+    <ul class="menu">
+      <li><a href=" ./acceuil.html">acceuil</a></li>
+      <li><a href="./a _propos.html">a propos</a></li>
+      <li><a href="#">destination</a></li>
+      <li><a href="./contact.html">contact</a></li>
+    </ul>
+    <a href="#" class="btn-reservation">Reservation</a>
+    
+  </header>
+  <div>
+  </div>
+</body>
+<div>
+  <div class="in_center" id="cardsInDisplay" >
+    <div class="card_in_on_line">
+      <div class="card" id="parisCard">
+        <img src="https://cdn.sortiraparis.com/images/80/83517/753564-visuel-paris-tour-eiffel-rue.jpg" alt="Avatar" style="width:100%; height:200px">
+        <div class="container">
+          <h4><b>Paris</b></h4>
+          <p>Ville romantique par excellence, elle attire les touristes tout au long de l'année. La capitale française est si riche qu'il ne suffit pas de quelques heures pour la visiter. Entre monuments, musées, boutiques, parcs, gastronomie, les choix ne manquent pas ! Quelles que soient vos préférences, vous apprécierez cette ville aux mille visages.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://a.cdn-hotels.com/gdcs/production99/d1929/6e1ec2a9-3215-49a3-be43-b409ef581652.jpg" alt="Avatar" style="width:100%; height:200px">
+        <div class="container">
+          <h4><b>Berlin</b></h4>
+          <p> Berlin, la capitale allemande, séduit par l’extraordinaire diversité de ses curiosités touristiques, par sa richesse culturelle et par un style de vie à la fois dynamique et décontract.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1200px-Colosseo_2020.jpg" alt="Avatar" style="width:100%; height:200px">
+        <div class="container">
+          <h4><b>Rome</b></h4>
+          <p>Capitale de l'Italie, Rome est une grande ville cosmopolite dont l'art, l'architecture et la culture de presque 3 000 ans rayonnent dans le monde entier. Ses ruines telles que celles du Forum Romain et du Colisée évoquent la puissance de l'ancien Empire romain.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card_in_on_line">
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/TunisAveHabibBourguiba.jpg" alt="Avatar" style="width:100%; height:200px">
+        <div class="container">
+          <h4><b>Tunis</b></h4>
+          <p>Tunis est l'immense capitale de la Tunisie, un pays d'Afrique du Nord. Elle se trouve le long du lac de Tunis, juste en retrait du golfe de Tunis, sur la mer Méditerranée. Elle accueille une médina centenaire et le Bardo, un musée archéologique où des célèbres mosaïques romaines sont exposées dans un complexe palatial du XVe siècle.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Saint_Basil%27s_Cathedral_and_the_Red_Square.jpg" alt="Avatar" style="width:100%; height:200px">
+        <div class="container">
+          <h4><b>Moscow</b></h4>
+          <p>Moscou, sur la Moskva à l'ouest de la Russie, est la capitale cosmopolite du pays. Son centre historique est le Kremlin, résidence du Président et complexe abritant les trésors des tsars dans l'Armurerie. À l'extérieur, la place Rouge est le centre symbolique de la Russie.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="http://gemvoyages.com/public/images/image/image_0.67889200-1622455191.png" alt="Avatar" style="width:100%; height:200px">
+        <div class="container">
+          <h4><b>Istambul</b></h4>
+          <p>Istanbul est une grande ville turque à cheval entre l'Europe et l'Asie, séparée par le détroit du Bosphore. Sa vieille ville reflète les influences culturelles des nombreux empires qui ont régné sur Istanbul. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="travelForm" class="formTravel">
+    <div class="insideFormTravel">
+      <form action="">
+        <div class="formBox">
+          <label for="departLocation">Ville de depart:</label><br>
+          <input type="text" id="departLocation" name="departLocation" value="Tunis" class="formInput"><br>
+        </div>
+        <div class="formBox">
+          <label for="arrivalLocation">Ville d'arrivée:</label><br>
+          <input type="text" id="arrivalLocation" name="arrivalLocation" value="Paris" class="formInput"><br><br>
+        </div>
+
+        <div class="formBox">
+          <label for="departTime">Date de départ:</label><br>
+          <input type="date" id="start" name="trip-start" value="20122-07-22"  class="formInput"><br><br>
+        </div>
+
+        <div class="formBox">
+          <label for="arrivalTime">Date d'arrivée:</label><br>
+          <input type="date" id="arrival" name="trip-start" value="22=022-07-22" class="formInput"><br><br>
+        </div>
+        <button>Annuler</button>
+        <button onclick="sendTravelInfo()">Envoyer</button>
+      </form> 
+    </div>
+   
+  </div>
+  
+</div>
+</html>
+<script>
+  console.log('"bonjour')
+  var cardsInDisplay =  document.getElementById("cardsInDisplay");
+  // var cardsInDisplay =  document.getElementById("cardsInDisplay").setAttribute("class", "displayNone");
+  var parisCard = document.getElementById("parisCard");
+  parisCard.onclick = function(){cardsInDisplay.setAttribute("class", "displayNone")};
+  sendTravelInfo=()=>{
+    alert(`Felicitation, votre vol de ${document.getElementById("departLocation").value} a ${document.getElementById("arrivalLocation").value} du ${document.getElementById("start").value} au ${document.getElementById("arrival").value} a été enregistré`)
+  }
+</script>

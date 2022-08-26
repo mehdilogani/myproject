@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap');
+
+header{
+    background-color: #222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 5%;
+  
+  }
+  header  .logo a{
+    font-size: 25px;
+    color:  #29d9d5;
+    text-decoration: 0;
+  }
+  header  .logo a span{
+    color: #fff;
+  }
+  .menu{
+    display: flex;
+    align-items: center;
+  
+  }
+  .menu li{
+    margin: 0 15px;
+    list-style-type: none;
+  }
+  .menu li a{
+    color: #fff;
+    font-size: 14px;
+  }
+  .btn-reservation{
+    color: #29d9d5;
+    font-size: 14px;
+    border: 2px solid #29d9d5;
+    padding: 5px 20px;
+    transition: 0.5s;
+    font-weight: bolder;
+  }
+  .btn-reservation:hover{
+    background-color: #29d9d5;
+    color: #fff;
+    font-weight: bold;
+  
+  }
+  #home{
+    background: linear-gradient(rgba(0,0,0,0,1)),#333, url("https://media.istockphoto.com/photos/passenger-airplane-flying-above-clouds-during-sunset-picture-id155439315?k=20&m=155439315&s=612x612&w=0&h=BvXCpRLaP5h1NnvyYI_2iRtSM0Xsz2jQhAmZ7nA7abA=");
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh- 50px);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+  }
+   
+  
+  
+#a_propos{
+
+    margin-top: 100px;
+    padding: 0 35px;
+    width: 100%;
+   }
+.title{
+text-transform: capitalize;
+margin: 78px 0;
+margin-bottom: 0px;
+font-weight: bold;
+color: #29d9d5;
+position: relative;
+margin-left: 0px;
+animation: fadeIn 5s;
+font-size: 50px;
+}
+.fadeInText{
+  animation: fadeIn 5s;
+  position: relative;
+}
+@keyframes fadeIn {
+  0% { left: 100%; }
+  100% { left: 0%; }
+}
+.title::after{
+position: absolute;
+left: -15px;
+content: "" ;
+height: 100%;
+background-color: #fff;
+width: 5px;
+
+}
+.int{
+    font-size: 23px;
+    margin-bottom: 10px;
+    -webkit-text-stroke: #fff 0.02px;
+    color: #fff;
+    padding-right: -50px;
+    padding-top: -30px;
+}
+.suite{
+    font-size: 15px;
+  color: #fff;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  text-transform: capitalize;
+
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+  
+  
+  
+
+
+
+
+
+div.paragraph.p{
+color: #fff;
+font: 24px;
+margin-bottom: 20px;
+
+}
+
+h1 { text-transform: lowercase; }
+h1:first-letter { text-transform: uppercase; }
+.partenaire{
+  text-transform: capitalize;
+margin: 78px 0;
+margin-bottom: 0px;
+font-weight: bold;
+color: #29d9d5;
+position: relative;
+margin-left: 0px;
+
+font-size: 50px;
+}
